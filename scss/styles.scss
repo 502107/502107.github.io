@@ -5,11 +5,11 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #aec3b0;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
+$background: #e8eddf;
 $background-alt: #f2f2f5;
 
 // Define border colors
@@ -265,15 +265,15 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: #e8eddf;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    border: 3px solid #e8eddf;
     border-radius: 30px;
     @include transition();
 
     &:hover {
         color: $base-color;
-        background: #fff;
+        background: #e8eddf;
         text-decoration: none;
     }
 }
@@ -340,9 +340,9 @@ footer {
     }
 
     h1 {
-        color: #fff;
+        color: #eff6e0;
         font-weight: 900;
-        font-size: 5em;
+        font-size: 4em;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         line-height: 0.9em;
@@ -376,7 +376,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    color: #e8eddf;
 
     span {
         cursor: pointer;
@@ -478,7 +478,7 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
+    background: #e8eddf;
     border: 1px solid #e6e6e6;
     padding: 15px;
     border-radius: 3px;
@@ -515,7 +515,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: #e8eddf;
     width: 50px;
     height: 50px;
     background: $base-color;
@@ -617,7 +617,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: #e8eddf;
     border-radius: 4px;
 }
 
@@ -706,7 +706,7 @@ footer {
 
     h2 {
         margin: 0 0 15px 0;
-        color: #fff;
+        color: #e8eddf;
         font-weight: 500;
     }
 }
@@ -723,10 +723,10 @@ footer {
         border: none;
         margin-bottom: 10px;
         background: darken($base-color, 15%);
-        color: #fff;
+        color: #e8eddf;
         @include transition();
         @include placeholder {
-            color: #fff;
+            color: #e8eddf;
         }
 
         &:focus {
@@ -743,7 +743,7 @@ footer {
     button {
         display: block;
         width: 100%;
-        background: #fff;
+        background: #e8eddf;
         border-radius: 4px;
         padding: 5px 10px;
         border: none;
@@ -779,7 +779,7 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
-    background: #fff;
+    background: #e8eddf;
     text-align: left;
 
     h3 {
