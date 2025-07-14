@@ -656,19 +656,21 @@ footer {
 
 .publication-block h3 {
     font-weight: 500;
-    float: left;
+    /* Removed float: left; to allow full width for title */
     margin: 0;
     color: var(--heading);
 }
 
 .publication-block span {
     color: var(--text);
-    float: right;
+    /* Removed float: right; to allow full width for date */
+    display: block; /* Make the date take its own line */
+    margin-top: 5px; /* Add some space below the title */
 }
 
 .publication-block h4 {
     color: var(--text);
-    clear: both;
+    clear: both; /* Ensures this clears any previous floats, though they're removed now */
     font-weight: 500;
     margin: 0 0 10px 0;
 }
