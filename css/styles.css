@@ -710,7 +710,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
-    background: white;
+    background: var(--background-alt);
 }
 
 #skills h2 {
