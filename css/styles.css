@@ -60,7 +60,7 @@ body.active {
 .no-js #experience-timeline > div h4 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #7e8890; /* This was not mapped to a variable, kept original */
+    color: #7e8890;
     margin: 0 0 15px 0;
 }
 
@@ -201,7 +201,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #b9bfc4; /* This was lighten($text, 25%) but no exact CSS equivalent */
+    border: 3px solid #b9bfc4;
     text-align: center;
 }
 
@@ -236,7 +236,7 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #e8eddf; /* Kept original as it's meant to be white on dark background */
+    color: #e8eddf;
     padding: 15px 25px;
     border: 3px solid #e8eddf;
     border-radius: 30px;
@@ -277,9 +277,14 @@ footer {
     background: var(--base-color);
 }
 
-.background-alt {
+.background-white {
+    background: white;
+}
+
+.background-pale-green {
     background: var(--background-alt);
 }
+
 
 /*
     --------------------------
@@ -323,7 +328,7 @@ footer {
 }
 
 #lead-content h2 {
-    color: #d1e2d2; /* lighten($base-color, 25%) */
+    color: #d1e2d2;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px;
@@ -337,7 +342,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(141, 161, 142, 0.8); /* rgba($base-color-hover, 0.8) */
+    background: rgba(141, 161, 142, 0.8);
     z-index: 1;
 }
 
@@ -349,7 +354,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #e8eddf; /* Kept original as it's meant to be white on dark background */
+    color: #e8eddf;
 }
 
 #lead-down span {
@@ -359,7 +364,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #d1e2d2; /* lighten($base-color, 25%) */
+    border: 3px solid #d1e2d2;
     text-align: center;
 }
 
@@ -411,6 +416,7 @@ footer {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid var(--border);
+    background: var(--background-alt);
 }
 
 #experience h2 {
@@ -442,7 +448,7 @@ footer {
     width: 3px;
     height: 40px;
     background: var(--base-color);
-    background: linear-gradient(to bottom, var(--base-color), rgba(174, 195, 176, 0)); /* rgba($base-color, 0) */
+    background: linear-gradient(to bottom, var(--base-color), rgba(174, 195, 176, 0));
     top: 100%;
     left: 303px;
 }
@@ -450,7 +456,7 @@ footer {
 .vtimeline-content {
     margin-left: 350px;
     background: var(--background);
-    border: 1px solid #e6e6e6; /* Kept original as it was not mapped to a variable */
+    border: 1px solid var(--border);
     padding: 15px;
     border-radius: 3px;
     text-align: left;
@@ -467,7 +473,7 @@ footer {
 .vtimeline-content h4 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #7e8890; /* This was not mapped to a variable, kept original */
+    color: #7e8890;
     margin: 0 0 15px 0;
 }
 
@@ -486,7 +492,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #e8eddf; /* Kept original as it's meant to be white on dark background */
+    color: #e8eddf;
     width: 50px;
     height: 50px;
     background: var(--base-color);
@@ -509,7 +515,7 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #374054; /* This was not mapped to a variable, kept original */
+    color: #374054;
 }
 
 /*
@@ -534,6 +540,7 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid var(--border);
+    background: var(--background);
     text-align: left;
 }
 
@@ -577,6 +584,7 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid var(--border);
     text-align: center;
+    background: white;
 }
 
 #projects h2 {
@@ -591,6 +599,7 @@ footer {
     overflow: hidden;
     background: var(--background);
     border-radius: 4px;
+    border: 1px solid var(--border);
 }
 
 .project-image {
@@ -639,6 +648,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid var(--border);
     text-align: center;
+    background: var(--background-alt);
 }
 
 #publications h2 {
@@ -651,26 +661,25 @@ footer {
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid var(--border);
+    background: var(--background);
     text-align: left;
 }
 
 .publication-block h3 {
     font-weight: 500;
-    /* Removed float: left; to allow full width for title */
     margin: 0;
     color: var(--heading);
 }
 
 .publication-block span {
     color: var(--text);
-    /* Removed float: right; to allow full width for date */
-    display: block; /* Make the date take its own line */
-    margin-top: 5px; /* Add some space below the title */
+    display: block;
+    margin-top: 5px;
 }
 
 .publication-block h4 {
     color: var(--text);
-    clear: both; /* Ensures this clears any previous floats, though they're removed now */
+    clear: both;
     font-weight: 500;
     margin: 0 0 10px 0;
 }
@@ -701,6 +710,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background: white;
 }
 
 #skills h2 {
@@ -720,7 +730,7 @@ footer {
     margin: 7px;
     padding: 5px 10px;
     color: var(--heading);
-    background: #dce4d1; /* darken($background-alt, 5%) */
+    background: #dce4d1;
     list-style: none;
     cursor: default;
     font-size: 1.2em;
@@ -757,7 +767,7 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #95a796; /* darken($base-color, 15%) */
+    background: #95a796;
     color: #e8eddf;
     transition: 0.5s ease all;
 }
@@ -787,7 +797,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #7b8b7c; /* darken($base-color, 25%) */
+    background: #7b8b7c;
 }
 
 #contact-form textarea {
