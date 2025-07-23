@@ -5,16 +5,16 @@
 */
 
 :root {
-    --base-color: #aec3b0;
-    --base-color-hover: #8da18e; /* darken(#aec3b0, 10%) */
+    --base-color: #0081a1; /* Pantone 314 C */
+    --base-color-hover: #006a86; /* Darken(#0081a1, 10%) */
 
-    --background: #e8eddf;
-    --background-alt: #eff6e0;
+    --background: #e0f7fa; /* Very Light Cyan */
+    --background-alt: #f0f8ff; /* AliceBlue */
 
     --border: #dcd9d9;
 
-    --heading: #2b2c28;
-    --text: #333533;
+    --heading: #2c3e50; /* Dark Blue-Grey */
+    --text: #34495e; /* Lighter Blue-Grey */
 }
 
 /*
@@ -120,7 +120,7 @@ header a {
 header a:hover {
     color: var(--base-color-hover);
     text-decoration: none;
-    background: #eee;
+    background: #e0e0e0; /* Lighter grey for hover */
     border-radius: 4px;
 }
 
@@ -236,16 +236,16 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #e8eddf;
+    color: #f0f8ff;
     padding: 15px 25px;
-    border: 3px solid #e8eddf;
+    border: 3px solid #f0f8ff;
     border-radius: 30px;
     transition: 0.5s ease all;
 }
 
 .btn-rounded-white:hover {
     color: var(--base-color);
-    background: #e8eddf;
+    background: #f0f8ff;
     text-decoration: none;
 }
 
@@ -281,7 +281,7 @@ footer {
     background: white;
 }
 
-.background-pale-green {
+.background-pale-blue {
     background: var(--background-alt);
 }
 
@@ -318,7 +318,7 @@ footer {
 }
 
 #lead-content h1 {
-    color: #eff6e0;
+    color: #f0f8ff;
     font-weight: 900;
     font-size: 5em;
     text-transform: uppercase;
@@ -328,7 +328,7 @@ footer {
 }
 
 #lead-content h2 {
-    color: #d1e2d2;
+    color: #80deea; /* Light Cyan */
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px;
@@ -342,7 +342,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(141, 161, 142, 0.8);
+    background: rgba(0, 129, 161, 0.8); /* Updated */
     z-index: 1;
 }
 
@@ -354,7 +354,7 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #e8eddf;
+    color: #e0f7fa;
 }
 
 #lead-down span {
@@ -364,7 +364,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #d1e2d2;
+    border: 3px solid #80deea; /* Light Cyan */
     text-align: center;
 }
 
@@ -448,7 +448,7 @@ footer {
     width: 3px;
     height: 40px;
     background: var(--base-color);
-    background: linear-gradient(to bottom, var(--base-color), rgba(174, 195, 176, 0));
+    background: linear-gradient(to bottom, var(--base-color), rgba(0, 129, 161, 0)); /* Updated */
     top: 100%;
     left: 303px;
 }
@@ -492,7 +492,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #e8eddf;
+    color: #e0f7fa;
     width: 50px;
     height: 50px;
     background: var(--base-color);
@@ -730,7 +730,7 @@ footer {
     margin: 7px;
     padding: 5px 10px;
     color: var(--heading);
-    background: #dce4d1;
+    background: #b2ebf2; /* Lighter Cyan */
     list-style: none;
     cursor: default;
     font-size: 1.2em;
@@ -750,7 +750,7 @@ footer {
 
 #contact h2 {
     margin: 0 0 15px 0;
-    color: #e8eddf;
+    color: #e0f7fa;
     font-weight: 500;
 }
 
@@ -767,37 +767,37 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #95a796;
-    color: #e8eddf;
+    background: #408c9f; /* Muted Cyan */
+    color: #f0f8ff;
     transition: 0.5s ease all;
 }
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-    color: #e8eddf;
+    color: #f0f8ff;
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-    color: #e8eddf;
+    color: #f0f8ff;
     opacity: 1;
 }
 
 #contact-form input::-moz-placeholder,
 #contact-form textarea::-moz-placeholder {
-    color: #e8eddf;
+    color: #f0f8ff;
     opacity: 1;
 }
 
 #contact-form input:-ms-input-placeholder,
 #contact-form textarea:-ms-input-placeholder {
-    color: #e8eddf;
+    color: #f0f8ff;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #7b8b7c;
+    background: #006a86; /* Darker Muted Cyan */
 }
 
 #contact-form textarea {
@@ -808,7 +808,7 @@ footer {
 #contact-form button {
     display: block;
     width: 100%;
-    background: #e8eddf;
+    background: #e0f7fa;
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
